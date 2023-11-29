@@ -8,18 +8,15 @@
 //something to divide number into digits (an array?)
 
 const chosen_number = Number(prompt("Scegli un numero di 4 cifre"))
-
+//created array
 const number_array = [chosen_number]
-console.log(number_array);
-
-const digit_array = number_array.toString()
-console.log(digit_array);
-console.log(digit_array.length);
-
-for (let i = 0; i < 10; i++) {
+//converted array into separeted items
+const digit_array = number_array.toString()  
     
-if (digit_array.length !== 4) {
-    alert(`Ti avevo chiesto un numero di 4 cifre, non di ${digit_array.length} ! Riprova`)
-    const chosen_number = Number(prompt("Scegli un numero di 4 cifre"))
-}
-}
+    
+    let sum_digit_number = 0
+    for (let i = 0; i < 4; i++) {            
+        sum_digit_number += parseInt(digit_array[i])       
+    }
+    console.log(sum_digit_number);
+
