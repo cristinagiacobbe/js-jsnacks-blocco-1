@@ -20,5 +20,5 @@ for (let i = 0; i < 6; i++) {
       number_box.push(number_chosen) 
       console.log(number_box);
     }
-
 }
+document.querySelector(".text").innerHTML = `L'array risultante è: ${number_box}`
