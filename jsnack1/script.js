@@ -10,3 +10,7 @@
 //loop and check(if)
 //output with result
 
+const guest_list = ["Giorgio", "Fabio", "Luca", "Giulia", "Chiara"]
+const guest = prompt("Il suo nome, prego?")
+
+let check = false
